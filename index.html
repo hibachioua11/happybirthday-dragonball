@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SCREEN 1 -->
+
+    <div class="screen active" id="screen1">
+
+        <h1>Do you love me? 💜</h1>
+
+        <button onclick="nextScreen(2)">Yes</button>
+
+        <button onclick="nextScreen(2)">Yes</button>
+
+    </div>
+
+    <!-- SCREEN 2 -->
+
+    <div class="screen" id="screen2">
+
+        <div class="confetti">
+            🎉 🎉 🎉 🎉 🎉
+        </div>
+
+        <img
+            src="images/goku.png"
+            class="character"
+            alt="Goku">
+
+        <div class="letter">
+
+            Dear Birthday Pickle,
+            <br><br>
+
+            I hope your day is full of happiness,
+            laughter and amazing memories.
+            Have the best birthday ever!
+
+        </div>
+
+        <button onclick="nextScreen(3)">
+            Continue Adventure ➜
+        </button>
+
+    </div>
+
+    <!-- SCREEN 3 -->
+
+    <div class="screen" id="screen3">
+
+        <div class="dragon-balls">
+
+            <div class="ball">★</div>
+            <div class="ball">★★</div>
+            <div class="ball">★★★</div>
+            <div class="ball">★★★★</div>
+            <div class="ball">★★★★★</div>
+            <div class="ball">★★★★★★</div>
+            <div class="ball">★★★★★★★</div>
+
+        </div>
+
+        <div id="shenronScene">
+
+            <div class="smoke"></div>
+
+            <img
+                src="images/shenron.png"
+                id="shenron"
+                alt="Shenron">
+
+        </div>
+
+        <h1>🐉 The Dragon Balls Are Gathered!</h1>
+
+        <h2>Make a Wish ✨</h2>
+
+        <input
+            type="text"
+            placeholder="Type your wish here">
+
+        <br><br>
+
+        <button onclick="nextScreen(4)">
+            Submit Wish
+        </button>
+
+    </div>
+
+    <!-- SCREEN 4 -->
+
+    <div class="screen" id="screen4">
+
+        <h1>⚽ Happy Birthday! ⚽</h1>
+
+        <div class="videoFrame">
+
+            <img
+                src="images/messi and cruyff.png"
+                class="character"
+                alt="Messi and Cruyff">
+
+        </div>
+
+        <div id="message"></div>
+
+        <br>
+
+        <button onclick="nextScreen(1)">
+            Replay Adventure 🔄
+        </button>
+
+    </div>
+
+    <!-- Confetti Library -->
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <!-- Your JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
